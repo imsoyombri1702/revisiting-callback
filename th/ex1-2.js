@@ -7,6 +7,16 @@
 
 let damage = 30;
 // Start Coding Here
+function playerAction(callback){
+    return callback();
+}
+
+function attack(){
+    return `💥 โจมตีสำเร็จ! สร้างความเสียหาย ${damage} แต้ม`
+}
+function runAway(){
+    return `😨 หนีสำเร็จ! รอดตายหวุดหวิด!`
+}
 
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
