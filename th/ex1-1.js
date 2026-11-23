@@ -5,9 +5,29 @@
     - กระบวนการทางคณิตศาสตร์
 - ให้เขียน function ที่ทำงานตามที่โจทย์กำหนด
 */
-
 // Start Coding Here
+function calculate(num1, num2, operation) {
+  return operation(num1, num2);
+}
 
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+function divide(num1, num2) {
+  if (num2 === 0) {
+    return "Cannot divide by zero";
+  }
+  return num1 / num2;
+}
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(calculate(10, 5, add)); // 15
